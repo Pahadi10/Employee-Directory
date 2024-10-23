@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Employee Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React project that displays employee information in card format, with features to search employees, view detailed employee information in a popup, and block/unblock employees.
+
+## Features
+
+- Displays a list of employees in a card layout.
+- Search employees by name using a search bar.
+- View detailed employee information in a modal popup.
+- Block and unblock employees with options to list blocked employees and unblock them.
+- Responsive and stylish UI.
+
+## Project Structure
+
+.
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   ├── BlockedUsersModal.css
+│   │   ├── BlockedUsersModal.js
+│   │   ├── EmployeeCard.css
+│   │   ├── EmployeeCard.js
+│   │   ├── EmployeeDetailsModal.css
+│   │   ├── EmployeeDetailsModal.jss
+│   │   ├── EmployeeList.js
+│   │   ├── SearchBar.js
+│   │   
+│   ├── App.css
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **Node.js**: You need Node.js installed to run the project. You can download it from [here](https://nodejs.org/).
+- **npm**: npm comes with Node.js, so it should be installed along with it.
+
+## Installation
+
+Follow these steps to initialize the project:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/Pahadi10/Employee-Directory.git
+    cd employee-directory
+    ```
+
+2. **Install dependencies**:
+
+    To install the required dependencies, run the following command inside the project folder:
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server**:
+
+    After the dependencies are installed, start the React development server with:
+    ```bash
+    npm start
+    ```
+
+    This will open the project in your default browser at `http://localhost:3000/`.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- **`npm start`**: Runs the app in development mode.
+- **`npm run build`**: Builds the app for production.
+- **`npm test`**: Runs the test suite (if applicable).
+- **`npm run eject`**: Removes the single build dependency from the project (not reversible).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Once the project is up and running, you can use the following features:
 
-### `npm test`
+1. **Search Employees**: Use the search bar to find employees by name.
+2. **View Details**: Click the "Details" button on an employee card to open a modal with detailed information about the employee.
+3. **Block Employees**: Click the "Block" button to block an employee, removing them from the main list.
+4. **View Blocked Users**: Click the "Blocked Users" button next to the search bar to view and unblock blocked employees.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **React.js**: Front-end framework.
+- **CSS**: Styling for components.
+- **JavaScript (ES6+)**: Used to build dynamic functionality.
+- **HTML5**: Base markup for the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+All components are styled using separate `.css` files for easy customization:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **EmployeeCard.css**: Styles for employee cards.
+- **EmployeeDetailsModal.css**: Styles for the employee details modal.
+- **BlockedUsersModal.css**: Styles for the blocked users modal.
 
-### `npm run eject`
+## Future Enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Possible improvements for future development:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Add a backend to store employee data.
+- Add the ability to edit employee information.
+- Implement authentication for different users (admin, employee).
+- Add pagination or infinite scroll for large employee lists.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you want to contribute to this project, feel free to submit a pull request or report issues.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source and available under the [MIT License](LICENSE).

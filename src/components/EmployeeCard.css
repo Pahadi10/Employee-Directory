@@ -1,0 +1,83 @@
+
+.employee-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .employee-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .employee-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+  }
+  
+  .employee-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .employee-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .employee-card button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .employee-card button:hover {
+    background-color: #4b3dbd;
+  }
+  
+  .employee-card button:active {
+    background-color: #3b2e96;
+  }
+  
+  @media (max-width: 768px) {
+    .employee-card {
+      width: 180px;
+      padding: 15px;
+    }
+  
+    .employee-photo {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .employee-card h3 {
+      font-size: 1.1rem;
+    }
+  
+    .employee-card p {
+      font-size: 0.85rem;
+    }
+  
+    .employee-card button {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+    }
+  }
+  
